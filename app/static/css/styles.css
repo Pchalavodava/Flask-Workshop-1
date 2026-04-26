@@ -1,0 +1,131 @@
+body {
+    font-family: Lobster;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 30px);
+}
+
+.navigation-menu, .footer {
+    background-color: #536e4d;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+}
+
+.navigation-menu a, .footer {
+    color: white;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+}
+
+.page-name-logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.name {
+    color: #536e4d;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    height: 20px;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+}
+
+.team-photo, .interior-photo {
+    width: 600px;
+}
+
+.information {
+    width: 700px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea {
+    font-family: Lobster;
+}
+
+#confirmation-of-sending{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: #536e4d;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-data {
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#send-button {
+    font-family: Lobster;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #536e4d;
+    color: white;
+    height: 40px;
+    width: 200px;
+}

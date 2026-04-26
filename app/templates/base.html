@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Rest for Rest{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<header class="header">
+    <div class="navigation">
+        <nav class="navigation-menu">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
+    <!--    <h1 class="name">Rest for Rest</h1>-->
+    <div class="page-name-logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}"
+             alt="A dark olive-colored logo for the “Rest for Rest” restaurant, featuring a fork at its center."
+             class="logo">
+        <h1 class="name">{% block name %} Rest for Rest {% endblock %}</h1>
+    </div>
+</header>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+<footer class="footer">
+    <p>&copy; 2026 Rest for Rest</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Rest for Rest - Home page{% endblock %}
+
+
+{% block name %}Welcome to our restaurant{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="information">
+        <p>Here you can try a variety of dishes from different countries around the world and simply
+            enjoy your time with a
+            glass of your favorite wine or a stunning cocktail.</p>
+    </div>
+    <img src="{{url_for('static', filename='img/rest_for_rest.jpg')}}" alt="Photo of the restaurant 'Rest for Rest'"
+         class="interior-photo">
+</div>
+{% endblock %}

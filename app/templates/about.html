@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Rest for Rest - About us{% endblock %}
+
+{% block name %}About us{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="information">
+        <p>Our team is a large international family where traditions, flavors, and cultures come together. We create not
+            just
+            dishes, but memorable experiences and a unique atmosphere for every guest.</p>
+        <p>Discover the world through flavor.</p>
+    </div>
+    <img src="{{url_for('static', filename='img/rest_team.jpg')}}" alt="Photo of the 'Rest for Rest' team"
+         class="team-photo">
+</div>
+{% endblock %}

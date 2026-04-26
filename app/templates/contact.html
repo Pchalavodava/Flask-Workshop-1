@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Rest for Rest - Contact{% endblock %}
+
+{% block name %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div id="confirmation-of-sending" class="{{ status }}">{{ confirmation }}</div>
+    <form class="contact-form" method="POST" action="/submit">
+        <div class="input-data">
+            <label for="name">Your Name: </label>
+            <input type="text" name="name" id="name" required
+                   oninvalid="this.setCustomValidity('Enter your name')"
+                   oninput="this.setCustomValidity('')">
+        </div>
+        <div class="input-data">
+            <label for="email">Your E-mail: </label>
+            <input type="email" name="email" id="email" required
+                   oninvalid="this.setCustomValidity('Invalid E-mail')"
+                   oninput="this.setCustomValidity('')">
+        </div>
+        <div class="input-data">
+            <label for="message">Your Message: </label>
+            <textarea name="message" id="message" maxlength="50" required
+                      oninvalid="this.setCustomValidity('Enter your message')"
+                      oninput="this.setCustomValidity('')"></textarea>
+        </div>
+        <button type="submit" id="send-button">Send</button>
+    </form>
+</div>
+
+{% endblock %}
