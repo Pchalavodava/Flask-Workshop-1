@@ -5,6 +5,13 @@
 {% block name %}About us{% endblock %}
 
 {% block content %}
+<div class="container" id="team-list">
+    <ul>
+        {% for member in team_members %}
+        <li>{{ member.name }} is {{ member.role }}</li>
+        {% endfor %}
+    </ul>
+</div>
 <div class="container">
     <div class="information">
         <p>Our team is a large international family where traditions, flavors, and cultures come together. We create not

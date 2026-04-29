@@ -5,6 +5,13 @@
 {% block name %}Contact Us{% endblock %}
 
 {% block content %}
+<div class="container" id="contact">
+    <p class="responsible">Responsible person:</p>
+    <p class="responsible">{{ responsible_person.position }}</p>
+    <p class="responsible">{{ responsible_person.name }}</p>
+    <a href="tel:{{ responsible_person.contact.phone }}">{{ responsible_person.contact.phone }}</a>
+    <a href="">{{ responsible_person.contact.email }}</a>
+</div>
 <div class="container">
     <div id="confirmation-of-sending" class="{{ status }}">{{ confirmation }}</div>
     <form class="contact-form" method="POST" action="/submit">

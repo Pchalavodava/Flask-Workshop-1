@@ -129,3 +129,32 @@ input, textarea {
     height: 40px;
     width: 200px;
 }
+
+#team-list {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
+
+#team-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+#contact {
+    gap: 5px;
+    border: 5px inset #536e4d;
+    border-radius: 50px;
+    padding: 10px;
+    width: 300px;
+}
+
+.responsible {
+    display:flex;
+    gap: 5px;
+    margin: 0;
+    align-items: center;
+}
